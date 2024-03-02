@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/79f41054d8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!---nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid sticky-top">
+          <h5 class="mt-2">
+             <i class="fa-brands fa-instagram"></i>
+             <a class="navbar-brand" href="#">Instagram</a>
+          </h5>
+         
+
+          <div class="d-flex gap-2"> 
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+          <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Caption</h5>
+            <div class="input-group">
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+          <button class="btn border border-1 mt-2"><i class="fa-solid fa-camera"></i></button>
+          <button class="btn border border-1 mt-2"><i class="fa-solid fa-location-dot"></i></button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!----Drop down-->
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+            </div>
+          </div> 
+        </div>
+    </nav>
+
+    <!--menu and grid -->
+    <div class="container d-flex flex-column gap-3 mt-3">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+
+        <div class="container-fluid p-0"> <!-----container fluid just added if messes up delete-->
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-mulit-view" role="tabpanel">
+         
+          
+         
+              <!-- GRID 3 IMAGES BY ROW -->
+              <div class="container-fluid d-grid">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4"><img src="https://pampermut.com/blog/wp-content/uploads/2020/05/Como-es-el-caracter-de-tu-perro-segun-su-horoscopo-scaled.jpg" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                  <div class="col-xs-12 col-sm-4"><img src="https://doublejj.com/wp-content/uploads/2020/02/group-people.jpeg" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                  <div class="col-xs-12 col-sm-4"><img src="https://lp-cms-production.imgix.net/2020-11/GettyRF_598163608.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=20&dpr=5" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4"><img src="https://www.allprodad.com/wp-content/uploads/2021/03/05-12-21-happy-people.jpg" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                  <div class="col-xs-12 col-sm-4"><img src="https://tse4.mm.bing.net/th?id=OIP.HaBylvbyRBchcYM76i6nNwHaLL&pid=Api&P=0&h=180" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                  <div class="col-xs-12 col-sm-4"><img src="http://static.guim.co.uk/sys-images/Guardian/About/General/2014/1/25/1390672211256/Real-Madrids-Cristiano-Ro-006.jpg" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4"><img src="https://bidunart.com/wp-content/uploads/2019/11/Family032a-1.jpg" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                  <div class="col-xs-12 col-sm-4"><img src="https://wallpapers.com/images/high/code-programming-text-lines-symbols-multi-colored-87onuqnmrr2bloi3.jpg"style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                  <div class="col-xs-12 col-sm-4"><img src="https://cdn9.dissolve.com/p/D430_50_073/D430_50_073_1200.jpg" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4"></div>
+                </div>
+              </div>
+            </div> <!---tab panel-->
+          </div> <!---tab panel-->
+
+          <div class="tab-pane fade" id="pills-single-view" role="tabpanel"><!--single view-->
+            <div class="main">
+
+              <div class="post">
+                <div class="post-header">
+                    <h5>My Crazy dog Spark</h5>
+                    <span>1/31</span>
+                </div>
+                <img src="https://pampermut.com/blog/wp-content/uploads/2020/05/Como-es-el-caracter-de-tu-perro-segun-su-horoscopo-scaled.jpg" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4">
+                <p>This is my photo of the feed. This is a multi line comment for testing purposes. I am learning to code with<strong><span class="hashtag"></span></strong></p>
+              </div>
+
+              <div class="post">
+                <div class="post-header">
+                    <h5>The greatness of Croatia</h5>
+                    <span>2/14</span>
+                </div>
+                <img src="https://lp-cms-production.imgix.net/2020-11/GettyRF_598163608.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=20&dpr=5" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4">
+                <p>This is my photo of the feed. This is a multi line comment for testing purposes. I am learning to code with<strong><span class="hashtag"></span></strong></p>
+              </div>
+
+              <div class="post">
+                <div class="post-header">
+                    <h5>Amazing GOAL by Cristiano!</h5>
+                    <span>2/21</span>
+                </div>
+                <img src="http://static.guim.co.uk/sys-images/Guardian/About/General/2014/1/25/1390672211256/Real-Madrids-Cristiano-Ro-006.jpg" style="width: 100%; height: 50vh; object-fit: cover;" class="mb-4">
+                <p>This is my photo of the feed. This is a multi line comment for testing purposes. I am learning to code with<strong><span class="hashtag"></span></strong></p>
+              </div>
+           
+           
+           
+           
+           
+            </div><!---main-->
+          </div><!---single view-->
+        </div><!------container fluid-->
+
+        
+ <!------<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+  
+  
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
